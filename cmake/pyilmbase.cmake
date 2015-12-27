@@ -1,0 +1,6 @@
+find_package(PkgConfig)
+set( ENV{PKG_CONFIG_PATH} $ENV{PKG_CONFIG_PATH}:$ENV{REZ_PYILMBASE_ROOT}/lib/pkgconfig)
+pkg_check_modules(PYILMBASE REQUIRED PyIlmBase)
+set(pyilmbase_INCLUDE_DIRS   	${PYILMBASE_INCLUDE_DIRS})
+set(pyilmbase_LIBRARY_DIRS   	${PYILMBASE_LIBRARY_DIRS})
+set(pyilmbase_LIBRARIES 	    ${PYILMBASE_LIBRARIES})
